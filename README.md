@@ -22,9 +22,9 @@ Assuming you have a local clone with remotes `upstream` (this repo) and `origin`
 ```bash
 # WARNING: this will erase local pending changes!
 # commit them to a different branch or use git stash
-git checkout gh-pages
+git checkout master
 git fetch upstream
-git reset --hard upstream/gh-pages
+git reset --hard upstream/master
 ```
 
 Creating a new branch for feature/bugfix work now results in a clean, easy merge
@@ -33,5 +33,5 @@ down the line.
 Now that local is up to date with `upstream`, update your GitHub fork with:
 
 ```bash
-git push --force origin/gh-pages
+git push --force origin/master
 ```
